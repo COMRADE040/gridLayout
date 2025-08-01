@@ -203,3 +203,24 @@
         }
 
 
+.calendar{
+            display: grid;
+            row-gap: 20px;
+            column-gap: 10px;
+            grid-template-rows: 30px repeat(5, 50px);
+            grid-template-columns: repeat(7, 1fr);
+        }
+        .date, .day{
+            text-align: center;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            font-size: 1.5em;
+            /* height: 50px; */
+            border-radius: 5px;
+            background-color: skyblue;
+        }
+        .day{
+            background: lightgray;
+            font-size: 1em;
+        }
