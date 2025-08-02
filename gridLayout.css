@@ -224,3 +224,34 @@
             background: lightgray;
             font-size: 1em;
         }
+
+
+
+        .container-trans, .inner{
+            width: 200px;
+            height: 200px;
+        }
+        .container-trans{
+            border: 2px solid;
+            background-color: aquamarine;
+        }
+        /* .inner{
+            border: 2px solid brown;
+            background-color: palegoldenrod;
+            transform: scale(0.5, 0.25);
+        } */
+        .inner{
+            border: 2px solid brown;
+            /* text-align: center; */
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            display: flex;
+            background-color: palegoldenrod;
+            transform: scale(0.3, 0.5) rotate(45deg);
+            transition: 0.5s;
+        }
+        .inner:hover{
+            transform: scale(0.8) rotate(0deg);
+
+        }
