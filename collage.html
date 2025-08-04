@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      main,
+      header {
+        margin: 50px;
+      }
+
+      p {
+        text-align: center;
+        
+        width: 100%;
+        height: 100%;
+        background-color: cornflowerblue;
+      }
+      .row {
+        height: 400px;
+        display: flex;
+        gap: 5px;
+        margin: 5px;
+      }
+      .row div {
+        flex: 1;
+      }
+      .vertical-collage p {
+        /* margin: 0px; */
+        height: calc((100% - 16px) / 2);
+        /* height: 50%; */
+      }
+      .square-collage {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+      }
+      @media screen and (max-width: 576px) {
+        .row {
+          flex-direction: column;
+          height: auto;
+          margin: -25px;
+        }
+        .square-collage {
+          grid-template-columns: 1fr;
+          height: auto;
+        }
+      }
+
+      @media screen and(min-width: 576px) and (max-width: 992px) {
+        .row {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Picture Collage</h1>
+    </header>
+
+    <main>
+      <section>
+        <div class="row">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+            perspiciatis ullam magnam odit fuga ipsa, facilis voluptate aperiam
+            nostrum itaque eos, suscipit oriosam deleniti sit reiciendis laborum
+            dolores dignissimos nostrum ut. Fugiat nemo temporibus expedita
+            asperiores, nulla necessitatibus porro accusamus.
+          </p>
+        </div>
+
+        <div class="row">
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+              perspiciatis ullam magnam odit fuga ipsa, facilis voluptate
+              aperiam nostrum itaque eos, suscipit porro, quas culpa. Minima
+              dolores quam corrupti accusamus! Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Corrupti, dicta.
+            </p>
+          </div>
+
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+              perspiciatis ullam magnam odit fuga ipsa, facilis voluptate
+              aperiam nostrum itaque eos, suscipit porro, quas culpa. Minima
+              dolores quam corrupti accusamus!
+            </p>
+          </div>
+
+          <div class="vertical-collage">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+              perspiciatis ullam magnam odit fuga ipsa, facilis voluptate
+              aperiam nostrum itaque eos, suscipit porro, quas culpa. Minima
+              dolores quam corrupti accusamus!
+            </p>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+              perspiciatis ullam magnam odit fuga ipsa, facilis voluptate
+              aperiam nostrum itaque eos, suscipit porro, quas culpa. Minima
+              dolores quam corrupti accusamus!
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit
+              suscipit vero ut hic rem velit, exercitationem ratione, sed facere
+              ipsum aliquid ab architecto dolorem provident numquam? Iste beatae
+              doloremque minus fugiat temporibus. Qui quas at et modi laudantium
+              soluta expedita voluptatem, nostrum nihil sint, reprehenderit
+              illum voluptatum fugit assumenda non.
+            </p>
+          </div>
+
+          <div class="square-collage">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia
+              quaerat nihil impedit explicabo eos, doloribus iusto. Lorem ipsum
+              dolor sit amet consectetur adipisicing elit. Recusandae, quae?
+            </p>
+
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia
+              quaerat nihil impedit explicabo eos, doloribus iusto dolore error!
+              Quidem, Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Veritatis, ducimus! cupiditate est? Nemo, laborum similiq.
+            </p>
+
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia
+              quaerat nihil impedit explicabo eos, doloribus iusto dolore error!
+              Quidem, cupiditate Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Earum, excepturi! est? Nemo, laborum sim
+            </p>
+
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia
+              quaerat nihil impedit explicabo eos, doloribus iusto dolore error!
+              Quidemt magn
+            </p>
+          </div>
+
+          <div>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam
+              vel laudantium ut voluptates nihil architecto delectus inventore
+              neque odiiasidfnuasfurbusdfasuidhfuiafnidnfvgiusdfgnusdgnusdf
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+              fugit ab dolore asperiores similique veniam? Sequi harum
+              recusandae inventore. Beatae dignissimos, incidunt sequi inventore
+              nisi nobis velit vitae ea aut!
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
